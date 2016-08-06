@@ -9,7 +9,7 @@ var main = function() {
     });
     function printTable(rates) {
         for(var i = 0; i<rates.length; i++){
-            $('#exchange').append('<tr><td class="currency">Waluta: ' + rates[i].currency + 
+            $('#exchange').append( '<tr><td class ="number">' + (i+1)  +'</td><td class="currency">Waluta: ' + rates[i].currency + 
                 '</td><td class="rate">kurs: ' + rates[i].ask + '</td></tr>');
         }
     }
